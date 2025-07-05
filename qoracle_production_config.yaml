@@ -1,0 +1,134 @@
+# qOracle Production Configuration - qduction Environment
+# BANKON PYTHAI Unified System
+
+version: "1.0.0"
+environment: "qduction_production"
+deployment_date: "2024-07-04"
+
+# Qubic Network Configuration
+network:
+  name: "Qubic Testnet"
+  node_ip: "127.0.0.1"
+  node_port: 21841
+  schedule_tick: 20
+  contract_index: 1  # QX contract
+
+# Deployment Configuration
+deployment:
+  deployer_seed: "ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5"
+  bridge_authority: "ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5"
+  gas_limit: 1000000
+  gas_price: 1000
+
+# Oracle Committee Configuration
+oracle_committee:
+  size: 7
+  quorum_threshold: 4
+  signature_algorithm: "Dilithium3"
+  public_key_size: 1472
+  signature_size: 2701
+  update_frequency: 300  # 5 minutes
+  price_precision: 15
+  max_price_deviation: 50  # 50% max deviation
+
+# Token Configuration (QX Assets)
+tokens:
+  bankon_pythai:
+    name: "BANKON PYTHAI"
+    symbol: "BKPY"
+    total_supply: 100000
+    decimals: 15
+    unit_of_measurement: "UNITS"
+    fixed_supply: true
+    
+  qbtc:
+    name: "qBTC Synthetic"
+    symbol: "qBTC"
+    total_supply: 21000000
+    decimals: 8
+    unit_of_measurement: "SATOSHIS"
+    fixed_supply: true
+    underlying: "BTC"
+    
+  qusd:
+    name: "qUSD Stablecoin"
+    symbol: "qUSD"
+    total_supply: 1000000000
+    decimals: 15
+    unit_of_measurement: "UNITS"
+    fixed_supply: false
+    peg: "USDC"
+    collateral_ratio: 1.0
+
+# Cross-Chain Bridge Configuration
+bridge:
+  supported_pairs:
+    - "STX/qBTC"
+    - "qBTC/STX"
+  oracle_integration: true
+  protocol_fees: 0
+  max_swap_amount: 1000000000000  # 1M STX
+  min_swap_amount: 1000000        # 1 STX
+  security_delay: 3600            # 1 hour
+
+# Governance Configuration
+governance:
+  multisig_threshold: 3
+  proposal_duration: 604800       # 7 days
+  execution_delay: 86400          # 24 hours
+  min_proposal_quorum: 2
+
+# Security Configuration
+security:
+  quantum_resistant: true
+  launch_protection: true
+  admin_key_burning: true
+  replay_protection: true
+  timestamp_validation: true
+  price_bounds_check: true
+  overflow_protection: true
+
+# Qubic CLI Configuration
+qubic_cli:
+  path: "./testnet_env/qubic-cli"
+  seed_parameter: "-seed"
+  nodeip_parameter: "-nodeip"
+  nodeport_parameter: "-nodeport"
+  scheduletick_parameter: "-scheduletick"
+  qx_commands:
+    - "qxissueasset"
+    - "qxtransferasset"
+    - "qxgetfee"
+    - "qxorder"
+    - "qxgetorder"
+
+# Monitoring Configuration
+monitoring:
+  health_check_interval: 60       # 1 minute
+  price_update_timeout: 600       # 10 minutes
+  oracle_rotation_interval: 86400 # 24 hours
+  backup_interval: 3600           # 1 hour
+
+# Production Paths
+paths:
+  production_dir: "production/"
+  oracle_keys: "production/oracle_keys/"
+  logs: "production/logs/"
+  backups: "production/backups/"
+  configs: "production/configs/"
+  contracts: "production/contracts/"
+
+# Emergency Configuration
+emergency:
+  pause_functionality: true
+  emergency_multisig: true
+  circuit_breaker: true
+  max_daily_volume: 1000000000000000  # 1M STX equivalent
+
+# QX Contract Integration
+qx_integration:
+  contract_index: 1
+  asset_management: true
+  order_book: true
+  fee_structure: true
+  transfer_rights: true 

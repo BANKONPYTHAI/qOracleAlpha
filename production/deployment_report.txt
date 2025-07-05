@@ -1,12 +1,11 @@
-qOracle Production Deployment Report
-====================================
+qOracle Production Deployment Report - qduction Environment
+==========================================================
 
-Deployment Date: Fri 04 Jul 2025 10:16:25 PM PDT
-Deployer Address: ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5
-Contract Address: STEC1B35947F2C9D19D3B70959D67B5101067A0F516BC7F53515A48762C4997D45
-Bridge Authority: ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5
-Oracle Committee Size: 7
-Quorum Threshold: 4
+Deployment Date: Fri 04 Jul 2025 10:22:17 PM PDT
+Deployer Seed: ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5
+Node IP: 127.0.0.1
+Node Port: 21841
+Schedule Tick: 20
 
 Components Deployed:
 - Oracle Committee (7-of-7 Dilithium3)
@@ -15,6 +14,11 @@ Components Deployed:
 - qUSD Stablecoin (USDC peg)
 - Cross-Chain Bridge (STX/qBTC)
 - Governance Multisig (N-of-M)
+
+Asset IDs:
+- BANKON PYTHAI: BKPY_f859236bc1f1983568c64c558ac2e972
+- qBTC: qBTC_68358a94a1f72b1e07633a1798613089
+- qUSD: qUSD_49a8516ff74bc3a6b945be336aefbc6f
 
 Security Features:
 - Quantum-resistant Dilithium3 signatures
@@ -28,3 +32,5 @@ Production Status: DEPLOYED
 Launch Status: FINALIZED
 Security Status: ACTIVE
 
+Environment: qduction
+Network: Qubic Testnet
