@@ -1,0 +1,3 @@
+#!/bin/bash
+echo 'qOracle Production RC1 - Compiled Contract'
+echo 'Contract ID: 77b48b41e8c26c6ce6f56cdfa760373c'
