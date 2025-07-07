@@ -43,11 +43,10 @@ Production Checklist
 Technical Overview
 Token Standard: The contract is written in C++-style pseudo-code for a Qubic-compatible environment, using uint64_t for all balances and supply.
 
-Supply/Decimals:
-
+```txt
 Total Supply: 100,000 tokens
 
-Decimals: 12 (making 100,000.000000000000 units in total)
+Decimals: 12 (making 100,000.000000000000 BANKOJN PYTHAI units in total)
 
 Minting: All tokens are minted at deployment, directly to the deployer’s address. There is no inflation or future minting possible—making the supply hard-capped and fully auditable from genesis.
 
@@ -60,9 +59,8 @@ Launch Protection: The token can include a LaunchProtect class (provided earlier
 Code is Law: Once deployed, the contract logic is immutable; no owner or admin can alter core logic, supply, or balances.
 
 License: The contract is released under the Qubic Anti-Military License, restricting use in military contexts and ensuring open use for peaceful purposes.
-
-Summary
-You now have a highly precise, fixed-supply, synthetic token contract that:
+```
+BANKON PYTHAI is a highly precise, fixed-supply, suitable for synthetic token contract integration or inclusion that:
 
 Uses integer math for all operations (no floats)
 
