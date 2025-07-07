@@ -93,4 +93,7 @@ Tokens can be transferred between addresses as normal.
 
 There are no mint or burn functions after genesis—the supply is forever fixed.
 
-BANKON PYTHAI will integrate with qOracle as a DeFi protocols to create a highly reliable unit-of-value. BANKON PYTHAI has a fixed supply of 10000.000000000000 BANKON PYTHAI
+BANKON PYTHAI will integrate with qOracle as a DeFi protocols to create a highly reliable unit-of-value. 
+```txt
+BANKON PYTHAI has a fixed supply of 10000.000000000000 BANKON PYTHAI
+```
