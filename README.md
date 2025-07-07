@@ -91,7 +91,7 @@ On deployment, all 100,000 tokens (with 12 decimals) are assigned to the deploye
 
 Tokens can be transferred between addresses as normal.
 
-There are no mint or burn functions after genesis—the supply is forever fixed.
+There are no mint or burn functions after genesis—the supply is fixed forever as immutable.
 
 BANKON PYTHAI will integrate with qOracle as a DeFi protocols to create a highly reliable unit-of-value. 
 ```txt
