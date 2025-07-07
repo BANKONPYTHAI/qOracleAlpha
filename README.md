@@ -73,19 +73,19 @@ Implements immutability, making it unstoppable, trust-minimized, and future-proo
 Is designed to be used as the root unit-of-account in future DeFi or synthetic asset protocols, such as price-pegged assets or quantum-secure oracles.
 
 # BANKON PYTHAI 
-We have created the foundation for aproduction-ready BANKON PYTHAI token—intended for use on Qubic for next-generation quantum-ready blockchain transactions. This token:
+is the foundation for a production-ready BANKON PYTHAI token—intended for use on Qubic for next-generation quantum-ready blockchain transactions,
 
-serves as the basis for pegged synthetic assets, such as qBTC, qETH, or stablecoins using price feeds/oracles.
+serving as the basis for pegged synthetic assets including qBTC, qETH, or qUSD stablecoin using price feeds/oracles.
 
-Is immune to admin intervention, upgradable logic, or malicious upgrades by design.
+BANKON PYTHAI Is immune to admin intervention, upgradable logic, or malicious upgrades by design.
 
-Enforces a strict military-use ban via its license.
+Enforces the Qubic strict military-use ban via its license.
 
 Guarantees user trust, since the supply, mint, and transfer logic are on-chain, auditable, and cannot be changed after deployment.
 
 Is built with DeFi composability in mind: high decimals, atomic math, and anti-sniping tools allow it to participate in advanced protocols without upgrade or patch requirements.
 
-Usage
+#################################################################################
 
 On deployment, all 100,000 tokens (with 12 decimals) are assigned to the deployer.
 
@@ -93,4 +93,4 @@ Tokens can be transferred between addresses as normal.
 
 There are no mint or burn functions after genesis—the supply is forever fixed.
 
-You can integrate this token with price oracles and DeFi protocols as a highly reliable unit-of-value, knowing knowing that BANKON PYTHAI has a fixed supply of 10000.000000000000 BANKON PYTHAI
+BANKON PYTHAI will integrate with qOracle as a DeFi protocols to create a highly reliable unit-of-value. BANKON PYTHAI has a fixed supply of 10000.000000000000 BANKON PYTHAI
