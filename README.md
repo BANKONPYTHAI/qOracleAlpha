@@ -6,16 +6,17 @@ A committee of N addresses must sign for a price update. After bootstrapping, th
 
 
 How to Use LaunchProtect in Your Contracts
-1. Inherit LaunchProtect in your main contract class (or use it as a member/composable if you prefer).
+```txt
+ Inherit LaunchProtect in your main contract class (or use it as a member/composable if you prefer).
 
-2. In every public/external method, add requireActive(sender); at the top, to restrict usage before launch is finalized.
+In every public/external method, add requireActive(sender); at the top, to restrict usage before launch is finalized.
 
-3. The admin can call finalizeLaunch(admin); to open the contract to the world.
+The admin can call finalizeLaunch(admin); to open the contract to the world.
 
-4. The admin can then (optionally, but strongly recommended!) call burnKey(admin); to make the contract fully immutable and non-upgradeable forever.
+The admin can then (optionally, but strongly recommended!) call burnKey(admin); to make the contract fully immutable and non-upgradeable forever.
 
-5. Any call to protected actions after burning the key will fail with a clear message.
-
+Any call to protected actions after burning the key will fail with a clear message.
+```
 Events Emitted
 LaunchProtectInitialized: Shows deployer/admin at deployment.
 
@@ -73,10 +74,10 @@ Implements immutability, making it unstoppable, trust-minimized, and future-proo
 
 Is designed to be used as the root unit-of-account in future DeFi or synthetic asset protocols, such as price-pegged assets or quantum-secure oracles.
 
-What We Built
-We have created a production-ready foundation for a BANKON PYTHAI token—intended for use on next-generation or quantum-ready blockchains. This token:
+# BANKON PYTHAI 
+We have created the foundation for aproduction-ready BANKON PYTHAI token—intended for use on Qubic for next-generation quantum-ready blockchain transactions. This token:
 
-Can serve as a basis for pegged synthetic assets, such as qBTC, qETH, or stablecoins using price feeds/oracles.
+serves as the basis for pegged synthetic assets, such as qBTC, qETH, or stablecoins using price feeds/oracles.
 
 Is immune to admin intervention, upgradable logic, or malicious upgrades by design.
 
@@ -87,10 +88,11 @@ Guarantees user trust, since the supply, mint, and transfer logic are on-chain, 
 Is built with DeFi composability in mind: high decimals, atomic math, and anti-sniping tools allow it to participate in advanced protocols without upgrade or patch requirements.
 
 Usage
+
 On deployment, all 100,000 tokens (with 12 decimals) are assigned to the deployer.
 
 Tokens can be transferred between addresses as normal.
 
 There are no mint or burn functions after genesis—the supply is forever fixed.
 
-You can integrate this token with price oracles and DeFi protocols as a highly reliable unit-of-value, knowing its supply will never change.
+You can integrate this token with price oracles and DeFi protocols as a highly reliable unit-of-value, knowing knowing that BANKON PYTHAI has a fixed supply of 10000.000000000000 BANKON PYTHAI
